@@ -53,7 +53,17 @@ def malwarehome(request):
     return render(request, 'pages/malware_visualization/main.html')
 
 def malware_joinus(request):
-    return render(request, 'pages/malware_visualization/malware_viz_joinus.html')
+    if request.method=='GET':
+        # Page from the theme
+        return render(request, 'pages/malware_visualization/malware_viz_joinus.html')
+    if request.method=='POST':
+        name=request.POST['name']
+        email=request.POST['email']
+        message=request.POST['message']
+        contact=Contact.objects.create(name=name, email=email, message=message)
+        print(message)
+        messages.success(request,'The message has been received')
+    return render(request,'pages/index.html')
 
 def ptguihome(request):
     return render(request, 'pages/pt_gui/main.html')
