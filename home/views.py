@@ -43,6 +43,9 @@ def blog(request):
 def appattack(request):
     return render(request, 'pages/appattack/main.html')
 
+def fortify(request):
+    return render(request, 'pages/fortify/main.html')
+
 def appattack_join(request):
     return render(request, 'pages/appattack/join.html')
 

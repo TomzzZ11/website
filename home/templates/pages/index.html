@@ -68,7 +68,7 @@
             </div>  
             <div class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
               <h3 class="h5 card-title">AppAttack</h3>
-              <p class="mt-3">We deliver comprehensive reports to clients, providing actionable insights to enhance code security. With a commitment to excellence, AppAttack empowers organizations to proactively safeguard their digital assets</p>
+              <p class="mt-3" style="min-height: 350px;line-height: 3.5rem;">We deliver comprehensive reports to clients, providing actionable insights to enhance code security. With a commitment to excellence, AppAttack empowers organizations to proactively safeguard their digital assets</p>
               <a href="{% url 'appattack' %}">
                 <div class="btn btn-secondary">
                   Learn More
@@ -83,9 +83,15 @@
                 <img src="{% static 'assets/img/pages/home/threat-intel-card.svg' %}" class="card-img-top" alt="Neil Portrait">
               </div>  
               <div class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
-                <h3 class="h5 card-title">Malware Visualization</h3>
-                <p class="mt-3">The Malware Visualization project develops an interactive visual analytics tool to make malware analysis easier.​Integrated with existing visualization tools, this stand-alone application offers a user-friendly visual analysis</p>
-                <a href="{% url 'malware_viz_main' %}">
+                <h3 class="h5 card-title">Fortify</h3>
+                <p class="mt-3" style="min-height: 350px;">Fortify is a project in the Hardhat Enterprises ‘company’
+within the Deakin University School of Information
+Technology (SIT) Capstone programme. Hardhat Enterprises
+is focused on cyber security outcomes. Project Fortify has
+been running since 2022 and focused on creating a platform to
+connect volunteer cyber security professionals with small
+businesses and not-for-profit organisations.</p>
+                <a href="{% url 'fortify' %}">
                   <div class="btn btn-secondary">
                     Learn More
                   </div>
@@ -100,8 +106,29 @@
               </div>  
               <div class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
                 <h3 class="h5 card-title">PT-GUI</h3>
-                <p class="mt-3">Introducing the Deakin Detonator Toolkit (DDT) – the cutting-edge arsenal for modern penetration testers. Born from the innovative minds at PT-GUI, DDT is more than just a toolkit; it's a revolution in cybersecurity practice.</p>
+                <p class="mt-3" style="min-height: 350px;line-height: 3.5rem;">Introducing the Deakin Detonator Toolkit (DDT) – the cutting-edge arsenal for modern penetration testers. Born from the innovative minds at PT-GUI, DDT is more than just a toolkit; it's a revolution in cybersecurity practice.</p>
                 <a href="{% url 'ptgui_viz_main' %}">
+                  <div class="btn btn-secondary">
+                    Learn More
+                  </div>
+                </a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <h1 class="fw-bolder display-2 text-center mb-lg-2">Past Project</h1>
+      <div class="row mb-5">
+        <div class="col-12 col-md-6 col-lg-4 mb-5 mb-md-7 mb-lg-0">
+          <div class="card border-0 overflow-hidden">
+              <div class="position-relative">
+                <img src="{% static 'assets/img/pages/home/threat-intel-card.svg' %}" class="card-img-top" alt="Neil Portrait">
+              </div>  
+              <div class="card-body position-relative mt-n6 mx-2 bg-white border border-gray-300 text-center rounded">
+                <h3 class="h5 card-title">Malware Visualization</h3>
+                <p class="mt-3">The Malware Visualization project develops an interactive visual analytics tool to make malware analysis easier.​Integrated with existing visualization tools, this stand-alone application offers a user-friendly visual analysis</p>
+                <a href="{% url 'malware_viz_main' %}">
                   <div class="btn btn-secondary">
                     Learn More
                   </div>
